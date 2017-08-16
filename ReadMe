@@ -1,6 +1,38 @@
 Hello Hope
 This is my first commit
-I have implemented below
-Html work flow
-Wireframes
-Uml
+====================================================INSTALLATION==============================================================
+A: REQUIREMENTS:
+1:IDE Examples Visual studio code or Pycharm
+2:Python must be installed
+
+B:HOW TO GET IT WORKING
+1: Download the project files from  https://github.com/dikwella123/INNOVATIVEFINAL
+2: Unzip the files to a folder on your computer
+3: Open your IDE Terminal, use the commands below:-
+cd (TO THE DISK YOU UNZIPPED THE FOLDER) e.g cd C:
+cd (TO THAT FOLDER) e.g cd my_folder
+4:Open the file (perezxproject1.py) in your IDE
+5:Start the server (if your IDE IS Visual Studio Code start server by ctrl+F5 )
+6: Congratulations !!!! You managed to get The Innovation app Running
+
+===================================================WHAT IS INCLUDED IN THE PROJECT COOMING=======================================
+1:PAGES
+(a) Registration page
+(b) Login page
+(c) Home page
+(d) About us
+(e) Contact Page
+(f) Products page
+(g) Create product
+(h) Update Product
+(i) Delete Product
+============================================================PAGES AM NOW WORKING ON VERSION 3 COMMING SOON==============================
+These pages are:
+1: User profile
+2: Admin home
+3: Manage Uses
+==============================================================STILL UPDATING UML AND WIREFRAME DIAGRAMS================================
+
+WATCH OUT FOR MORE UPDATES HERE!!!
+
+
