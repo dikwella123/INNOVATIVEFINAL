@@ -37,6 +37,15 @@ def register():
 def contact():
     return render_template('contact.html')
 
+@app.route('/userprofile')
+def userprofile():
+    return render_template('userprofile.html')
+
+@app.route('/manageuser')
+def manageuser():
+    return render_template('manageuser.html')
+
+
 
 
 
