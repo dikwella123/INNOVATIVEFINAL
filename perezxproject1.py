@@ -1,6 +1,8 @@
 from flask import Flask,  render_template  
 app = Flask(__name__)
 
+
+
  
 
 @app.route('/')
@@ -27,7 +29,8 @@ def edit():
     return render_template('edit.html')
 @app.route('/products')
 def products():
-    return render_template('products.html')
+    content = ['Iphone 6', 'Nokia', 'Techno']
+    return render_template('products.html', content = content )
 
 @app.route('/register')
 def register():

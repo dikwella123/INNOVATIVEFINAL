@@ -64,31 +64,29 @@
          <caption>
     PRODUCTS
   </caption>
+  
      <table width="auto" border="0" cellspacing="1" cellpadding="1" class="table table-hover dataTable  table-striped table-responsive">
  
   <tbody >
     <tr class="alert-danger">
       <th scope="col">&nbsp;Item</th>
-      <th scope="col">&nbsp;Quantity</th>
-      <th scope="col">&nbsp;Price</th>
-      <th scope="col">&nbsp;Description</th>
-      <th scope="col">&nbsp;Date</th>
-       <th scope="col">&nbsp;More</th>
+     
     </tr>
+    {% for key in content %}
     <tr>
-      <td>&nbsp;Iphone 7</td>
-      <td>&nbsp;300</td>
-      <td>&nbsp;1500000</td>
-      <td>&nbsp;Best smart phone ever</td>
-      <td>&nbsp;12-03-2017</td>
-      <td>&nbsp;<a class="active" href="../products">Details</a></td>
+      
+      <td>&nbsp;{{ key }}</td>
     </tr>
+    {% endfor %}
   </tbody>
 </table>
 <div>
+    <a class="active" href="../products">Details</a>
 <a class="active" href="../create">Create</a>
 <a class="active" href="../edit">Edit</a>
 <a class="active" href="../delete">Delete</a>
+
+
 
 
       
