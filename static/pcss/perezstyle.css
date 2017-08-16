@@ -1,0 +1,13 @@
+@charset "utf-8";
+#sidebar {
+	background-color: #F58385;
+}
+#sidebar {
+	background-color: #E9E7E7;
+}
+
+#footer {
+	background-color: #362323;
+	height: auto;
+	width: auto;
+}
