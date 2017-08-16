@@ -10,9 +10,12 @@ def hello_world():
 @app.route('/About')
 def About():
     return render_template('About.html')
+
 @app.route('/Login')
+
 def Login():
     return render_template('Login.html')
+
 @app.route('/create')
 def create():
     return render_template('create.html')
@@ -25,9 +28,11 @@ def edit():
 @app.route('/products')
 def products():
     return render_template('products.html')
+
 @app.route('/register')
 def register():
     return render_template('register.html')
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')

@@ -9,9 +9,13 @@
 
     <title>Innovative</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS--> 
+    
     <link href="../static/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
- <link href="../static/bootstrap/scss/_tables.scss" rel="stylesheet">    <!-- Custom styles for this template -->
+ <link href="../scss/_tables.scss" rel="stylesheet">    
+ 
+ 
+ <!-- Custom styles for this template -->
     <link href="../static/pcss/navbar-top-fixed.css" rel="stylesheet">
      <link href="../static/pcss/perezstyle.css" rel="stylesheet">
   </head>
@@ -29,7 +33,7 @@
             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../about">About</a>
+            <a class="nav-link" href="../About">About</a>
           </li>
            <li class="nav-item">
             <a class="nav-link " href="../products">products</a>
@@ -60,7 +64,7 @@
          <caption>
     PRODUCTS
   </caption>
-     <table width="auto" border="0" cellspacing="1" cellpadding="1" class="table-active ">
+     <table width="auto" border="0" cellspacing="1" cellpadding="1" class="table table-hover dataTable  table-striped table-responsive">
  
   <tbody >
     <tr class="alert-danger">
@@ -102,5 +106,11 @@
     <script src="../static/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../static/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script>    
+      $(document).ready(function () {
+          $('.table').dataTable();
+      });    
+  </script>
   </body>
 </html>

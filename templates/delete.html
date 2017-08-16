@@ -9,16 +9,23 @@
 
     <title>Innovative</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- core SCSS -->
+    
     <link href="../static/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
- <link href="../static/bootstrap/scss/_tables.scss" rel="stylesheet">    <!-- Custom styles for this template -->
+    
+  
+    <link href="../scss/bootstrap.scss" rel="stylesheet">
+    <link href="../scss/_pagination.scss" rel="stylesheet">
+ <link href="../scss/_tables.scss" rel="stylesheet">   
+ 
+ <!-- Custom styles for this template -->
     <link href="../static/pcss/navbar-top-fixed.css" rel="stylesheet">
      <link href="../static/pcss/perezstyle.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
       <a class="navbar-brand" href="#">The Innovative</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,7 +36,7 @@
             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../about">About</a>
+            <a class="nav-link" href="../About">About</a>
           </li>
            <li class="nav-item">
             <a class="nav-link " href="../products">products</a>
@@ -60,7 +67,7 @@
          <caption>
     PRODUCTS
   </caption>
-     <table width="auto" border="0" cellspacing="1" cellpadding="1" class="table-active ">
+     <table width="auto" border="0" cellspacing="1" cellpadding="1" class="table table-hover dataTable  table-striped table-responsive>
  
   <tbody >
     <tr class="alert-danger">
@@ -101,5 +108,24 @@
     <script src="../static/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../static/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    
+    <script>
+      $(document).ready(function () {
+  
+          $('.datepicker').datepicker({
+              format: 'yyyy-mm-dd'
+          });
+  
+  
+          $('.icheck2').iCheck({
+              checkboxClass: 'icheckbox_square',
+              radioClass: 'iradio_square-red',
+              increaseArea: '20%' // optional
+          });
+  
+      });
+   
+
   </body>
 </html>
