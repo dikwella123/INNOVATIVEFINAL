@@ -1,6 +1,6 @@
 Hello Hope
 This is my first commit and Version2
-====================================================INSTALLATION==============================================================
+=========INSTALLATION==================
 A: REQUIREMENTS:
 1:IDE Examples Visual studio code or Pycharm
 2:Python must be installed
@@ -15,7 +15,7 @@ cd (TO THAT FOLDER) e.g cd my_folder
 5:Start the server (if your IDE IS Visual Studio Code start server by ctrl+F5 )
 6: Congratulations !!!! You managed to get The Innovation app Running
 
-===================================================WHAT IS INCLUDED IN THE PROJECT COOMING=======================================
+=============WHAT IS INCLUDED IN THE PROJECT COOMING==========
 1:PAGES
 (a) Registration page
 (b) Login page
@@ -26,12 +26,12 @@ cd (TO THAT FOLDER) e.g cd my_folder
 (g) Create product
 (h) Update Product
 (i) Delete Product
-============================================================PAGES AM NOW WORKING ON VERSION 3 COMMING SOON==============================
+=============PAGES AM NOW WORKING ON VERSION 3 COMMING SOON=======
 These pages are:
 1: User profile
 2: Admin home
 3: Manage Uses
-==============================================================STILL UPDATING UML AND WIREFRAME DIAGRAMS================================
+============STILL UPDATING UML AND WIREFRAME DIAGRAMS=============
 
 WATCH OUT FOR MORE UPDATES HERE!!!
 
