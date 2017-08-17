@@ -1,6 +1,6 @@
 from flask import Flask,  render_template, request
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
-
+from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 content = {"Iphone6": '1', "Nokia": '2'}
