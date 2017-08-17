@@ -1,7 +1,9 @@
-from flask import Flask,  render_template  
+from flask import Flask,  render_template, request
+from wtforms import Form, StringField, TextAreaField, PasswordField, validators
+
 app = Flask(__name__)
 
-
+content = {"Iphone6": '1', "Nokia": '2'}
 
  
 
@@ -13,32 +15,26 @@ def hello_world():
 def About():
     return render_template('About.html')
 
-@app.route('/Login')
-
-def Login():
-    return render_template('Login.html')
-
 @app.route('/create')
 def create():
     return render_template('create.html')
-@app.route('/delete')
-def delete():
-    return render_template('delete.html')
+
 @app.route('/edit')
 def edit():
     return render_template('edit.html')
-@app.route('/products')
+@app.route('/products', methods=['GET'])
 def products():
-    content = ['Iphone 6', 'Nokia', 'Techno']
     return render_template('products.html', content = content )
 
-@app.route('/register')
-def register():
-    return render_template('register.html')
+@app.route('/delete')
+def delete():
+   
+    return render_template('delete.html', content = content)
 
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
 
 @app.route('/userprofile')
 def userprofile():
@@ -47,6 +43,26 @@ def userprofile():
 @app.route('/manageuser')
 def manageuser():
     return render_template('manageuser.html')
+
+class RegisterForm():
+    username = StringField('inputusername', [validators.Length(min=1, max=50)])
+    email = StringField('inputEmail', [validators.Length(min=6, max=50)])
+    password = PasswordField('inputPassword', [ validators.data_required(), 
+    validators.EqualTo('inputconfirmpass', message='Oops! passwords do not match')])
+    confirm = PasswordField('inputconfirmpass')
+    
+    @app.route('/register')
+    def register():
+        
+             return render_template('register.html')
+        
+
+
+    @app.route('/Login')
+    def Login():
+        return render_template('Login.html')
+
+
 
 
 

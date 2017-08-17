@@ -29,7 +29,7 @@
             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../About">About</a>
+            <a class="nav-link" href="/About">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="../products">products</a>
@@ -58,51 +58,31 @@
       <div class="jumbotron">
         <h1>The Innovative</h1>
          <caption>
-    PRODUCTS
+    SHOPPING LIST
   </caption>
   <form action="" method="post">
-     <table width="auto" border="0" cellspacing="1" cellpadding="1">
+     <table width="auto" border="0" cellspacing="1" cellpadding="1" class="table table-hover dataTable  table-striped table-responsive" >
  
   <tbody >
     <tr class="alert-danger">
-      <td scope="col">&nbsp;Item</td>
-      <td>&nbsp;<input type="text" id="inputitem" required  placeholder="Item"  autofocus></td>
+      <td scope="col">&nbsp;Update Item</td>
+      <td>&nbsp;<input type="text" id="inputitem" required  placeholder="Item"  autofocus class = "form-control"></td>
      
     </tr>
     <tr></tr>
    
-    <tr>
-      <tr class="alert-success">
-      <td scope="col">&nbsp;Quantity</td>
-      <td>&nbsp;<input type="text" id="inputquantity" required  placeholder="Quantity" ></td>
-     
+    
     </tr>
-    <tr></tr>
-      <tr class="alert-danger">
-      <td scope="col">&nbsp;Price</td>
-      <td>&nbsp;<input type="text" id="inputprice" required  placeholder="Price" ></td>
-     
-    </tr>
-     <tr>
-      <tr class="alert-success">
-      <td scope="col">&nbsp;Description</td>
-      <td>&nbsp;<input type="text" id="inputdescription" required  placeholder="Description" ></td>
-     
-    </tr>
-    </tr>
-      <tr class="alert-danger">
-      <td scope="col">&nbsp;Date</td>
-      <td>&nbsp;<input type="text" id="inputdate" required  placeholder="Date" ></td>
-     
-    </tr>
-    <tr> 
-    <td><button class="btn btn-primary btn-block" type="submit">Update</button>
-    </td>
+ 
+   
     </tr>
     </tr>
     </tbody>
     
  </table>
+  
+ <button class="btn btn-primary btn-block" type="submit">Edit</button>
+ 
  <a class="active" href="../products">Products</a>
 
  </form>
