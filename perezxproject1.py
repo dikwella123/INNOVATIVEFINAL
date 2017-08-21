@@ -1,7 +1,11 @@
 from flask import Flask,  render_template, request
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from flask_sqlalchemy import SQLAlchemy
+
+
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://postgres:123@localhost/innovativedb'
+
 
 content = {"Iphone6": '1', "Nokia": '2'}
 
